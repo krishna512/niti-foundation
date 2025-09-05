@@ -1,0 +1,43 @@
+.elementor-pagination {
+  display: flex;
+  justify-content: end;
+  margin-top: 64px;
+
+  a.prev,
+  a.next {
+    color: #68797e;
+  }
+  .page-numbers {
+    padding: 7px 12px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+
+    &:not(.prev, .next) {
+      background: #efefef;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      border-right: 1px solid #e5e5e5;
+
+      &:hover {
+        background: #9b9118;
+        color: #fff;
+      }
+    }
+
+    &.prev + .page-numbers {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:has(+ .next) {
+      border-radius: 0 5px 5px 0;
+      border-right: 0;
+    }
+
+    &.current {
+      background: #9b9118;
+      color: #fff;
+    }
+  }
+}

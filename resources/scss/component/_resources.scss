@@ -1,0 +1,64 @@
+.project-category,
+.resource-category {
+  position: absolute;
+  top: 16px;
+  z-index: 15;
+  background: #e7e3b9;
+  border-radius: 0 5px 5px 0;
+
+  .elementor-widget-container .elementor-post-info a.elementor-post-info__terms-list-item {
+    padding: 8px 24px 8px 24px;
+    display: block;
+    font-weight: 600;
+    color: #2f2c07;
+  }
+}
+
+// New Resources Card
+
+.resources-card .resource-category {
+  top: 13px;
+}
+
+.resources-img-wrapper .resoruces-feature-img {
+  display: block;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  // aspect-ratio: 151.53 / 213.73;
+  padding-top: 141%;
+  border: 1px solid #cccccc;
+
+  @media (max-width: 640px) {
+    padding-top: 80%;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+  }
+}
+
+// source
+.author-name.source {
+  display: flex;
+  & > .info {
+    margin-left: 2px;
+  }
+}
+
+.slash-icon {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+// Animation
+// body:not(.elementor-editor-active) {
+//   .animate-wrapper {
+//     visibility: hidden;
+//   }
+// }

@@ -1,0 +1,37 @@
+{
+  "assets/icons/background-btn.svg": {
+    "file": "assets/background-btn-Mpadz6Jw.svg",
+    "src": "assets/icons/background-btn.svg"
+  },
+  "assets/icons/search.svg": {
+    "file": "assets/search-CZAoDfxf.svg",
+    "src": "assets/icons/search.svg"
+  },
+  "assets/icons/video-pause-btn.svg": {
+    "file": "assets/video-pause-btn-AI6VXyGc.svg",
+    "src": "assets/icons/video-pause-btn.svg"
+  },
+  "assets/icons/video-play-btn.svg": {
+    "file": "assets/video-play-btn-C-Npqht-.svg",
+    "src": "assets/icons/video-play-btn.svg"
+  },
+  "assets/icons/volume-high.svg": {
+    "file": "assets/volume-high-C65Vnyev.svg",
+    "src": "assets/icons/volume-high.svg"
+  },
+  "assets/icons/volume-mute.svg": {
+    "file": "assets/volume-mute-BrPnfwDw.svg",
+    "src": "assets/icons/volume-mute.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-C-0WmSOl.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/scss/main.scss": {
+    "file": "assets/main-DQ6RyjNQ.css",
+    "src": "resources/scss/main.scss",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,33 @@
+html {
+  // scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0 solid;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  height: 1em;
+}
+
+.wp-block-list a,
+.content-wrapper a {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #9b9118;
+  }
+}

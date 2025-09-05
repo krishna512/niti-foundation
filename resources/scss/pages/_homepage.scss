@@ -1,0 +1,63 @@
+// homepage Thematic Areas Card
+
+.thematic-card {
+  &:hover {
+    .thematic-card__bg .elementor-widget-container {
+      scale: 1.5;
+      transform: translate(-9%, -23px);
+    }
+  }
+
+  .thematic-card__bg .elementor-widget-container {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+// work single page Author name
+.work-single-info {
+  .work-single-data {
+    color: #494949;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Crimson Text', Sans-serif;
+
+    & > a {
+      color: inherit;
+    }
+  }
+}
+
+.author-single-info {
+  .author-single-data {
+    color: #787878;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+
+    .author-name > a {
+      color: #7c7413;
+    }
+    .date-icon {
+      line-height: 1.5;
+    }
+  }
+}
+
+.work-single-data {
+  .link-uderscore {
+    text-decoration: underline;
+  }
+}
+
+// Event
+.event-single-info {
+  .event-single-data {
+    color: #494949;
+    font-size: 12px;
+    line-height: 1.5;
+
+    & > a {
+      color: #7c7413;
+    }
+  }
+}

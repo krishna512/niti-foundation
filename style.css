@@ -1,0 +1,452 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.elementor-widget-text-editor a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #586487;
+  text-decoration-thickness: 2px;
+  transition: all ease 0.4s;
+}
+
+.elementor-widget-text-editor a:hover {
+  color: var(--e-global-color-secondary);
+  text-decoration-color: var(--e-global-color-secondary);
+}
+
+.post-categories {
+  padding: 0;
+  display: inline-flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.post-categories a {
+  padding: 4px 12px;
+  background-color: var(--e-global-color-primary);
+  display: inline-flex;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+  transition: all ease 0.4s;
+}
+
+.post-categories a:hover {
+  background-color: var(--e-global-color-secondary);
+}
+
+/***
+* Image widget as Background image
+*/
+.bg-image,
+.bg-image .elementor-widget-container {
+  width: 100%;
+  height: 100%;
+}
+
+/***
+* Sticky header activated
+*/
+header.sticky-header.elementor-sticky--effects {
+  background-color: rgba(244, 245, 248, 0.5);
+  box-shadow: 0px 4px 33px 1px rgba(0, 0, 0, 0.07);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+/* Case_studies */
+.rounded-circle {
+  width: 18px;
+  height: 18px;
+}
+
+.elementor-shortcode:has(.author-wrapper) {
+  line-height: 0;
+}
+
+.author-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.author-wrapper img {
+  position: relative;
+}
+.author-name {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+/* Search Field */
+.elementor-element.e-con-boxed:has(> .e-con-inner > .search-input-wrapper) {
+  padding-left: 0;
+  padding-right: 0;
+}
+.search-input-wrapper form {
+  display: flex;
+  gap: 12px;
+}
+.search-input-wrapper input[type="submit"] {
+  position: relative !important;
+  margin-left: 0 !important;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+/* End Search Field */
+
+/* Custom card */
+.row:has(.card-wrapper) {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 64px;
+  row-gap: 80px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* column-gap: 36px;
+    row-gap: 40px; */
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.card-wrapper {
+  /* display: grid; */
+  padding-left: 0;
+  padding-right: 0;
+}
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  border: 0;
+}
+
+.card-img {
+  position: relative;
+  /* padding-top: 83.9%; */
+  max-width: 66%;
+  width: 100%;
+}
+/* .card-img img { */
+/* position: absolute; */
+/* inset: 0; */
+/* width: 66%; */
+/* height: 100%; */
+/* object-fit: cover; */
+/* max-width: 66%; */
+/* } */
+
+.card-body {
+  padding: 0 0;
+}
+.card-body .card-title {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.card-body .card-text {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #586487;
+}
+
+.learn-btn a > button {
+  border: none;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 10px 16px;
+  border-radius: 5px;
+}
+
+/* Webinar Series: Future of Manufacturing Icon height */
+
+.elementor-select-wrapper .select-caret-down-wrapper svg {
+  height: 1.5em;
+}
+
+.elementor-icon-list-item .elementor-icon-list-text {
+  color: #777777;
+  /* font-size: 12px; */
+}
+
+/* Calculator UI */
+
+/* Slide-value UI */
+.cff-form
+  #fbuilder
+  .fields
+  .dfield.slider-container
+  .small:not(.slider-type-components) {
+  width: 100% !important;
+}
+
+.cff-form #fbuilder .fields .dfield .ui-slider-handle,
+.cff-form #fbuilder .fields .dfield .ui-slider-range {
+  background: #1ca965;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+/* End Slide-value UI */
+
+.cff-form #fbuilder .fields:not(.cff-container-field) {
+  padding: 0 0 23px 0;
+}
+.cff-form #fbuilder .fields .dfield input,
+.cff-form #fbuilder .fields input[type="button"] {
+  border-radius: 10px;
+  padding: 15px;
+  width: 100% !important;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.cff-form #fbuilder .fields .dfield input {
+  color: #7b7b7b;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.cff-form #fbuilder .fields .dfield input:focus {
+  border-color: #1ca965;
+  box-shadow: 0 0 0 1px #1ca965;
+}
+
+.cff-form #fbuilder .fields input[type="button"] {
+  background: #1ca965;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.cff-form #fbuilder .fields input[type="button"]:hover {
+  background: #212121;
+}
+
+/** result page **/
+
+.result-grid {
+  display: grid;
+  gap: 25px;
+}
+
+.result-only {
+  text-align: center;
+}
+
+.result-only h2 {
+  font-weight: 400;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.result-only p {
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.result-list {
+  border-bottom: 1px solid #daddde;
+}
+
+.result-list h3 {
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.result-list p {
+  padding-bottom: 16px;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* Footer Dropdown list*/
+
+.elementor-form
+  .elementor-select-wrapper
+  select.elementor-field-textual
+  option {
+  background-color: #212121;
+}
+
+/*  Header Search Field UI */
+
+.elementor-popup-modal
+  .elementor-search-form--button-type-text
+  .elementor-search-form__container {
+  gap: 12px;
+}
+
+.elementor-popup-modal
+  .elementor-search-form--button-type-text
+  .elementor-search-form__container
+  .elementor-search-form__submit {
+  border-radius: 10px;
+}
+
+/* nav sub-menu */
+.elementor-icon-list-items
+  .elementor-icon-list-item.current-menu-item
+  > a
+  .elementor-icon-list-text {
+  color: #1ca965;
+  font-weight: 500;
+}
+
+.truncate-overflow {
+  width: 100%;
+  /* this code clamps based on specified lines */
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box !important;
+  text-overflow: ellipsis;
+}
+
+/* Elementor Editor */
+
+.elementor-widget-theme-post-content {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  line-height: 1.65;
+}
+.elementor-widget-theme-post-content .elementor-widget-container > * {
+  margin-bottom: 1.625rem;
+}
+.elementor-widget-theme-post-content .elementor-widget-container p {
+  margin-bottom: 1.625rem;
+}
+.elementor-widget-theme-post-content .elementor-widget-container ul,
+.elementor-widget-theme-post-content .elementor-widget-container ol {
+  padding: 0;
+}
+.elementor-widget-theme-post-content .elementor-widget-container ul ul,
+.elementor-widget-theme-post-content .elementor-widget-container ul ol,
+.elementor-widget-theme-post-content .elementor-widget-container ol ul,
+.elementor-widget-theme-post-content .elementor-widget-container ol ol {
+  margin-left: 2rem;
+}
+.elementor-widget-theme-post-content .elementor-widget-container ul li,
+.elementor-widget-theme-post-content .elementor-widget-container ol li {
+  margin-bottom: 1rem;
+  list-style-position: inside;
+  padding: 0;
+}
+.elementor-widget-theme-post-content
+  .elementor-widget-container
+  ul
+  li:last-child,
+.elementor-widget-theme-post-content
+  .elementor-widget-container
+  ol
+  li:last-child {
+  margin-bottom: 0;
+}
+.elementor-widget-theme-post-content .elementor-widget-container ul li img,
+.elementor-widget-theme-post-content .elementor-widget-container ol li img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.elementor-widget-theme-post-content .elementor-widget-container ul li:before,
+.elementor-widget-theme-post-content .elementor-widget-container ol li:before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+}
+.elementor-widget-theme-post-content .elementor-widget-container h1,
+.elementor-widget-theme-post-content .elementor-widget-container h2,
+.elementor-widget-theme-post-content .elementor-widget-container h3 {
+  margin-top: 3rem;
+  --tw-text-opacity: 1;
+  color: rgb(24 24 24 / var(--tw-text-opacity));
+}
+.elementor-widget-theme-post-content .elementor-widget-container a {
+  color: var(--e-global-color-primary);
+  transition: all 0.3s ease;
+}
+.elementor-widget-theme-post-content .elementor-widget-container a:hover {
+  color: var(--e-global-color-f61c0a9);
+}
+.elementor-widget-theme-post-content
+  .elementor-widget-container
+  > *:first-child {
+  margin-top: 0;
+}
+.elementor-widget-theme-post-content
+  .elementor-widget-container
+  > *:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Cookie Policy dropdown arrow */
+
+.page-id-3201 #cmplz-cookies-overview .cmplz-dropdown-cookiepolicy .cmplz-service-header > div{
+  position: relative;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media(max-width: 480px) {
+     flex-direction: column;
+     align-items: start;
+    }
+}
+
+.page-id-3201 #cmplz-cookies-overview .cmplz-dropdown-cookiepolicy .cmplz-service-header > div > p {
+  flex: 1;
+
+  @media(max-width: 480px){
+    text-align:start;
+  }
+}
+
+.page-id-3201 #cmplz-cookies-overview .cmplz-dropdown-cookiepolicy .cmplz-service-header> div > .cmplz_consent_per_service_label,
+.page-id-3201 #cmplz-cookies-overview .cmplz-dropdown-cookiepolicy .cmplz-service-header>div> input.cmplz-accept-service
+{
+    @media(max-width: 480px) {
+      display: none;
+    }
+}
+
+
+.page-id-3201 #cmplz-cookies-overview .cmplz-dropdown-cookiepolicy .cmplz-service-header >div:after{
+  position: absolute;
+  right: 0;
+}

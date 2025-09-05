@@ -1,0 +1,82 @@
+.login {
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    rgba(184, 196, 190, 0.08) 0%,
+    rgba(28, 169, 101, 0.28) 100%
+  );
+  background-repeat: no-repeat;
+  align-items: stretch;
+  align-content: flex-start;
+  /* background-position: 100% 100%; */
+}
+
+.yi-login {
+  width: 40%;
+  min-width: 350px;
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  background-color: #fff;
+}
+
+#login h1 a,
+.login h1 a {
+  height: 100px;
+  width: 160px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.yi-login #backtoblog {
+  display: none;
+}
+
+.yi-login form {
+  background-color: #fff;
+  border-width: 0px;
+  box-shadow: none;
+  margin-top: 20px;
+  padding: 26px 24px 46px;
+}
+
+.yi-login form label {
+  color: #7C7413;
+}
+
+.yi-login input[type="text"],
+.yi-login input[type="password"],
+.yi-login input[type="checkbox"] {
+  background-color: #FBFBFB;
+  border-color: #ddd;
+  color: #7C7413;
+}
+
+.login form input[type="text"]:focus,
+.login form input[type="password"]:focus,
+.login form input[type="checkbox"]:focus,
+.login form input[type="submit"]:focus {
+  border-color: #FBFBFB;
+  -webkit-box-shadow: 0 0 2px rgba(91, 157, 217, 0.8);
+  -moz-box-shadow: 0 0 2px rgba(91, 157, 217, 0.8);
+  box-shadow: 0 0 2px rgba(91, 157, 217, 0.8);
+}
+
+.login input[type="submit"] {
+  border-color: #9B9118;
+  background-color: #100F02;
+}
+
+.login input[type="submit"]:hover {
+  border-color: #9B9118;
+  background-color: #9B9118;
+}
+.login input[type="submit"]:active {
+  border-color: #9B9118;
+  background-color: #9B9118;
+}
+.login input[type="submit"]:focus {
+  border-color: #5b9dd9;
+  background-color: #9B9118;
+}

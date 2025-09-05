@@ -1,0 +1,121 @@
+.audio-player {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .audio-play {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  button {
+    &#play-pause {
+      border: none;
+      color: white;
+      border-radius: unset;
+      padding: 10px;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      transition: all 0.3s ease-in-out;
+      background: url('../../assets/icons/video-play-btn.svg') no-repeat;
+      background-size: 100%;
+      background-position: center center;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &.pause {
+        background: url('../../assets/icons/video-pause-btn.svg') no-repeat;
+      }
+    }
+  }
+
+  //   button.play {
+  //   }
+
+  .timeline {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .seek-bar {
+    border: 1px solid #cccccc;
+  }
+
+  .volume-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    .volume-btn {
+      width: 20px;
+      height: 20px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      background: url('../../assets/icons/volume-high.svg') no-repeat;
+
+      &.mute {
+        background: url('../../assets/icons/volume-mute.svg') no-repeat;
+      }
+    }
+  }
+
+  input[type='range'].seek-bar {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  input[type='range'].volume-bar {
+    max-width: 80px;
+    width: 100%;
+  }
+
+  input[type='range'].seek-bar,
+  input[type='range'].volume-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 10px;
+
+    &::-webkit-slider-runnable-track {
+      height: 10px;
+      margin-top: -1px;
+    }
+
+    &::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 10px;
+      cursor: cursor;
+      // background: red;
+      // box-shadow: -80px 0 0 80px var(--r-50);
+    }
+
+    &::-moz-range-thumb {
+      height: 10px;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 10px;
+      cursor: cursor;
+      background: transparent;
+      border: 0;
+    }
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
